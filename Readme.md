@@ -19,3 +19,9 @@ Gestionnaires : pip, mamba, poetry, uv
 ```
 pip install jupyterlab numpy pandas matplotlib pytest
 ```
+
+## Notebook Jupyter
+Avec votre IDE préféré ou avec un navigateur web:
+```
+jupyter lab
+```
