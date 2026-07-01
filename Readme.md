@@ -18,6 +18,7 @@ C:\Users\matth\AppData\Local\Python\pythoncore-3.11-64\python.exe -m venv .venv3
 Gestionnaires : pip, mamba, poetry, uv
 ```
 pip install jupyterlab numpy pandas matplotlib pytest
+pip install -r requirements.txt
 ```
 
 ## Notebook Jupyter
