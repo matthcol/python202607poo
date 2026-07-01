@@ -1,0 +1,4 @@
+__draft__/
+.ipynb_checkpoints/
+.venv*/
+data/communes-france-2025.csv
