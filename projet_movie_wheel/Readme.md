@@ -1,11 +1,28 @@
-docker build -t appmovie:0.1 .
+# Python project build as a wheel
 
-docker run --rm -it appmovie:0.1
-
-
-
+## Manage project with `uv`
+```shell
 uv init  # start project
-uv sync  # creer le venv
-uv add pydantic # dependance appli
-uv add --dev pytest pytest-cov # dependance dev
-uv export --no-dev --no-hashes -o requirements.txt
+uv sync  # create venv
+uv add pydantic # app dependency
+uv add --dev pytest pytest-cov poethepoet ruff # dev dependency
+uv build
+# quality code with Ruff
+uv run poe lint 
+uv run poe format
+# run tests
+uv run poe pytest
+# run app
+uv run poe movieapp
+# build app as a wheel
+uv build
+```
+
+## Deploy and run app
+In a python env compatible (os, venv, docker)
+```shell
+pip install projet_movie_docker-0.1.0-py3-none-any.whl
+# run app script
+movieapp
+```
+
