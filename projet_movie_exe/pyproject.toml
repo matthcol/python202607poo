@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "projet-movie-docker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "poethepoet>=0.34.0",
+    "ruff>=0.12.0",
+    "pyinstaller>=6.0",
+]
+
+[tool.poe.tasks]
+lint = "ruff check ."
+format = "ruff format ."
+format-check = "ruff format --check ."
+fix = "ruff check --fix ."
+
+[tool.poe.tasks.build-exe]
+help = "Produit un exe autonome embarquant Python via PyInstaller"
+cmd  = "pyinstaller --onefile --name movieapp --collect-all pydantic main.py"
+
+[tool.ruff.lint]
+select = ["E", "F", "N"]
+
+[project.scripts]
+movieapp = "main:main"
+
+[tool.hatch.build.targets.wheel]
+include = ["cinema", "main.py"]
+
+
+
+[tool.pytest.ini_options]
+addopts = ["-v", "--cov", "--cov-report=term-missing"]
+testpaths = [
+    "tests",
+]
