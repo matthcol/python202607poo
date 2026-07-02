@@ -21,8 +21,22 @@ pip install jupyterlab numpy pandas matplotlib pytest
 pip install -r requirements.txt
 ```
 
+Lister les dépendances:
+- requirements.txt
+- pyproject.toml
+
 ## Notebook Jupyter
 Avec votre IDE préféré ou avec un navigateur web:
 ```
 jupyter lab
 ```
+
+## Tests avec `pytest`
+```
+pytest
+pytest -v
+```
+
+## Gestion globale du projet
+- setup tools (ancienne)
+- pyproject.toml

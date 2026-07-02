@@ -2,7 +2,7 @@ from movie import Mo_vie
 
 
 # m = Movie()
-m1 = Mo_vie("La bataille de Gaulle: L'âge de fer", 2026, 160)
+m1 = Mo_vie(title="La bataille de Gaulle: L'âge de fer", year=2026, duration=160)
 m2 = Mo_vie(title='Les Tuche 4', year=2021)
 
 movies = [m1, m2]

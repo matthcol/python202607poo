@@ -1,10 +1,10 @@
 # module movie
 
 from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass # stdlib Python (3.8+), alt pydantic
-class Mo_vie:
+class Mo_vie(BaseModel):
     """ Represents a movie with its title, release year and duration in minutes
 
     Example:

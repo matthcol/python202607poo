@@ -5,7 +5,7 @@ from movie import Mo_vie
 
 def test_movie_duration_hour_minute_when_has_duration():
     # given
-    m = Mo_vie("E.T. the Extra-Terrestrial", 1982, 115)
+    m = Mo_vie(title="E.T. the Extra-Terrestrial", year=1982, duration=115)
     # when
     h_m = m.durationHourMinute()
     # then
@@ -14,7 +14,7 @@ def test_movie_duration_hour_minute_when_has_duration():
 
 def test_movie_duration_hour_minute_when_has_no_duration():
     # given
-    m = Mo_vie("E.T. the Extra-Terrestrial", 1982)
+    m = Mo_vie(title="E.T. the Extra-Terrestrial", year=1982)
     # when
     h_m = m.durationHourMinute()
     # then
