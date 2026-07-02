@@ -1,4 +1,6 @@
 __draft__/
+__pycache__/
+.pytest_cache/
 .ipynb_checkpoints/
 .venv*/
 data/communes-france-2025.csv
