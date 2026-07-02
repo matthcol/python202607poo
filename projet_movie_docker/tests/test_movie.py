@@ -1,11 +1,11 @@
 import pytest
 
-from movie import Mo_vie
+from movie import Movie
 
 
 def test_movie_duration_hour_minute_when_has_duration():
     # given
-    m = Mo_vie(title="E.T. the Extra-Terrestrial", year=1982, duration=115)
+    m = Movie(title="E.T. the Extra-Terrestrial", year=1982, duration=115)
     # when
     h_m = m.durationHourMinute()
     # then
@@ -14,7 +14,7 @@ def test_movie_duration_hour_minute_when_has_duration():
 
 def test_movie_duration_hour_minute_when_has_no_duration():
     # given
-    m = Mo_vie(title="E.T. the Extra-Terrestrial", year=1982)
+    m = Movie(title="E.T. the Extra-Terrestrial", year=1982)
     # when
     h_m = m.durationHourMinute()
     # then
@@ -43,7 +43,7 @@ def test_movie_duration_hour_minute_when_has_no_duration():
             "end of title CI",
         ]
 )
-def test_movie_contains_when_found(movie_et: Mo_vie, item):
+def test_movie_contains_when_found(movie_et: Movie, item):
     # when
     result = item in movie_et
     # then
@@ -68,7 +68,7 @@ def test_movie_contains_when_found(movie_et: Mo_vie, item):
             "a tuple"
         ]
 )
-def test_movie_contains_when_not_found(movie_et: Mo_vie, item):
+def test_movie_contains_when_not_found(movie_et: Movie, item):
     # when
     result = item in movie_et
     # then

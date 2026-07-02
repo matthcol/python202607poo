@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pydantic import BaseModel
 
 
-class Mo_vie(BaseModel):
+class Movie(BaseModel):
     """ Represents a movie with its title, release year and duration in minutes
 
     Example:
