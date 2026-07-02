@@ -23,4 +23,21 @@ def test_gcd_ok(a: int, b: int, expected_gcd: int):
     assert actual_gcd == expected_gcd
 
 
-# TODO: cases a ou b negatifs ou nul
+@pytest.mark.timeout(2)
+@pytest.mark.parametrize(
+      "a, b",
+      [
+          (0, 0),
+          (0, 5),
+          (5, 0),
+          (-1, 5),
+          (5, -1),
+          (-3, -7),
+      ],
+      # ids = ...
+
+)
+def test_gcd_ko(a: int, b: int):
+    with pytest.raises(ValueError) as ex:
+        gcd(a, b)
+    # TODO: check error message

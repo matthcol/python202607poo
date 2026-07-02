@@ -4,5 +4,6 @@ numpy
 matplotlib
 pytest
 pytest-cov
+pytest-timeout
 geopandas
 folium
