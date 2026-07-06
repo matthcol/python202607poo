@@ -1,1 +1,0 @@
-# marqueur du package tests (répertoire)

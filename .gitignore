@@ -1,8 +1,38 @@
+# Notes
 __draft__/
-__pycache__/
+
+# ia
+.claude/
+
+# IDE
 .vscode/
-.pytest_cache/
+
+# Python
+__pycache__/
+
+# Notebooks
 .ipynb_checkpoints/
+
+# Virtual envs
 .venv*/
+
+# Data downloaded
 data/communes-france-2025.csv
+
+# Pytest
+.pytest_cache/
 .coverage
+
+# Ruff
+.ruff_cache/
+
+# Build
+target/
+dist/
+build/
+*.egg-info/
+movieapp.spec
+
+# UV
+uv.lock
+

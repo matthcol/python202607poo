@@ -1,8 +1,0 @@
-import pytest
-
-from movie import Mo_vie
-
-
-@pytest.fixture
-def movie_et() -> Mo_vie:
-    return Mo_vie("E.T. the Extra-Terrestrial", 1982, 115)
