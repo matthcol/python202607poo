@@ -1,0 +1,1 @@
+print("Python au NH Hôtel")
