@@ -40,3 +40,5 @@ pytest -v
 ## Gestion globale du projet
 - setup tools (ancienne)
 - pyproject.toml
+
+Gérer les dépendances, la qualité et le build avec `uv` ou `poetry`.
